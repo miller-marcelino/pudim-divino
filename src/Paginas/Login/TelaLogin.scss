@@ -1,0 +1,16 @@
+.login-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.login-layout .login-page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-layout {
+  background-color: #f9f9f9;
+}

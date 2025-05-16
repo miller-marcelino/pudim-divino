@@ -1,0 +1,25 @@
+.card-component {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  max-width: 200px;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.card-caption {
+  text-align: center;
+  margin: 8px 0;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(162, 45, 112); ;
+  font-weight: bold;
+}

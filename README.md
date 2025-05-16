@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Pudim Divino
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto web desenvolvido em React para o site **Pudim Divino**, uma plataforma interativa que oferece cadastro de usuários, exibição de produtos, contato com redes sociais e um carrossel de vídeos. O projeto é focado na experiência do usuário e usabilidade, com design responsivo e integração com APIs externas.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📋 Sobre o Projeto
 
-### `npm start`
+Este projeto utiliza React.js com componentes funcionais, Bootstrap 5 para estilização e funcionalidades como carrossel e formulários controlados. O site permite:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Navegação via menu com React Router.
+- Cadastro de usuários com validação de campos e busca automática de endereço via API ViaCEP.
+- Página de contato com links para redes sociais e WhatsApp.
+- Exibição de produtos e conteúdos multimídia com carrossel de vídeos do YouTube.
+- Formulário de login simples.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js (com Hooks)
+- Bootstrap 5
+- React Router DOM
+- API ViaCEP para busca de endereço via CEP
+- React Icons (para redes sociais)
+- JavaScript (ES6+)
+- HTML5 e CSS3 (SCSS modularizado)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Funcionalidades Principais
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Menu de navegação** com links para as páginas principais: Início, Contato, Cadastro, Produtos, Sobre e Login.
+- **Carrossel personalizado** com vídeos do YouTube que pausam e tocam conforme o slide ativo.
+- **Formulário de cadastro** com campos para nome, sobrenome, endereço (CEP, rua, bairro, cidade), WhatsApp formatado, e seleção de sabor favorito de pudim.
+- **Formulário de login** com validação simples.
+- **Página de contato** com links diretos para Instagram, iFood e WhatsApp.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📁 Estrutura de Pastas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+/public
+└─ index.html
+/src
+├─ Componentes
+│ ├─ Card.jsx
+│ ├─ Carousel.jsx
+│ ├─ FormularioCadastro.jsx
+│ ├─ FormularioLogin.jsx
+│ ├─ Menu.jsx
+│ ├─ Rodape.jsx
+├─ Paginas
+│ ├─ Home.jsx
+│ ├─ Cadastro.jsx
+│ ├─ Contato.jsx
+│ ├─ TelaLogin.jsx
+├─ estilos (SCSS)
+│ ├─ Card.scss
+│ ├─ FormularioCadastro.scss
+│ ├─ FormularioLogin.scss
+│ ├─ Menu.scss
+│ ├─ Rodape.scss
+│ ├─ TelaLogin.scss
+├─ imagens
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🔧 Como Rodar o Projeto Localmente
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone o repositório:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/seu-usuario/pudim-divino.git
+cd pudim-divino
 
-### Code Splitting
+2. Instale as dependências:
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Inicie o servidor de desenvolvimento:
+npm start 
 
-### Analyzing the Bundle Size
+4. Acesse o site:
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. Para compilar o projeto para produção:
+npm run build
 
-### Making a Progressive Web App
+📝 Notas
+O projeto utiliza a API pública ViaCEP para busca automática de endereço pelo CEP.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Os vídeos do carrossel são incorporados via iframe do YouTube, com controle via API para pausar e reproduzir conforme o slide ativo.
 
-### Advanced Configuration
+O formulário de cadastro possui validações básicas e tratamento de eventos para manter a experiência fluida.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+📞 Contato
+Desenvolvido por Miller Marcelino - 2025
 
-### Deployment
+Instagram: Miller Marcelino
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+WhatsApp (81) 99525-2696    
 
-### `npm run build` fails to minify
+Email: miller.marcelino@hotmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
